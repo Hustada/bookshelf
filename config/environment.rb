@@ -2,8 +2,8 @@
 require File.expand_path('../application', __FILE__)
 
 # Initialize the rails application
-<<<<<<< HEAD
+
 Bookshelf::Application.initialize!
-=======
-Bookshelf::Application.initialize!
->>>>>>> initial commit from imac
+
+
+
