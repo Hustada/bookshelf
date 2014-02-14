@@ -1,7 +1,17 @@
 Bookshelf::Application.routes.draw do
+  root to: 'books#index'
+
+
+resources :admin_session
+resources :users, only: [:create]
+
+get '/register', to: 'users#new'
+
+
  resources :books do
     resources :comments
   end
+
 end
 
   # The priority is based upon order of creation:

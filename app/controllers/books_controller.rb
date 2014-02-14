@@ -9,7 +9,6 @@
       @comments = @book.comments.paginate :page => params[:page], :per_page => 10, :order => 'created_at ASC'
     end
 
-####
     def new
       @book = Book.new
     end
@@ -42,7 +41,7 @@
     def destroy
       book = Book.find params[:id]
       book.destroy
-      flash[:notice] = "#{@book.title} was deleted forever"
+      flash[:notice] = "#{book.title} was deleted forever"
       redirect_to books_path
     end
   end

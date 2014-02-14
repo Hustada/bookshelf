@@ -4,6 +4,7 @@ gem 'rails', '3.2.11'
 gem 'forgery'
 gem 'will_paginate'
 gem 'nifty-generators'
+#gem 'authlogic'
 
 
 # Bundle edge Rails instead:
